@@ -1,0 +1,102 @@
+{
+  "scheme": "merkle-sha256-ds-v1",
+  "version": 2,
+  "hash_function": "SHA-256",
+  "domain_separation": "leaf=0x00+preimage, node=0x01+left+right",
+  "created": "2026-11-19T20:30:33Z",
+  "description": "DJI Ronin 4D ProRes-on-CFexpress mod v2 \u2014 config-based discovery",
+  "v1_merkle_root": "061fa578e8e2bfac92a9d0df697ef57f109da4fdbf1d2ee4f6ef43bd19d563a1",
+  "v1_leaf_count": 14,
+  "leaf_count": 20,
+  "merkle_root": "edffe141ca38e6aa7576f86f11e1e34f0d8b941f0c3fc0a4c2fac84225b92573",
+  "leaf_construction": "SHA-256(0x00 + json.dumps({\"i\":index,\"l\":label,\"s\":secret,\"n\":nonce}, separators=(',',':'), sort_keys=True, ensure_ascii=True).encode('utf-8'))",
+  "public_leaves": [
+    {
+      "index": 0,
+      "label": "firmware_version",
+      "secret": "01.05.1802",
+      "nonce": "7ddd5b99d98b250a0b1d65896a5dcdd9",
+      "leaf_hash": "7bde98be0713b9f5e0bf137a27c7e5e5de82bc8f0090e59179f32d11b71328f4",
+      "merkle_proof": [
+        {
+          "hash": "2c398120543e238a98d0a07bf3950531ab412226a9182195f87d2c7cfb210fb2",
+          "side": "right"
+        },
+        {
+          "hash": "f39e603d6867424a32ca3b03a8806fcc69005a8e1b30b9f6f4fe400c1c7af616",
+          "side": "right"
+        },
+        {
+          "hash": "cd348dfe1337175f40637ca8866abfbf2d359c17ec7438c5b59d2e1dafe65202",
+          "side": "right"
+        },
+        {
+          "hash": "303b6a5c710f3d31a7ebd51ed74054fc63d5de38b23c97e0924c9e1927f74378",
+          "side": "right"
+        },
+        {
+          "hash": "5b58bcd46e8e62c2637c7109e98ab398758a82d2e6c48ce9f12e4ac40a00d319",
+          "side": "right"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "camera_component_version",
+      "secret": "10.02.02.37",
+      "nonce": "5456540458bbcd37f9e96bd178919665",
+      "leaf_hash": "2c398120543e238a98d0a07bf3950531ab412226a9182195f87d2c7cfb210fb2",
+      "merkle_proof": [
+        {
+          "hash": "7bde98be0713b9f5e0bf137a27c7e5e5de82bc8f0090e59179f32d11b71328f4",
+          "side": "left"
+        },
+        {
+          "hash": "f39e603d6867424a32ca3b03a8806fcc69005a8e1b30b9f6f4fe400c1c7af616",
+          "side": "right"
+        },
+        {
+          "hash": "cd348dfe1337175f40637ca8866abfbf2d359c17ec7438c5b59d2e1dafe65202",
+          "side": "right"
+        },
+        {
+          "hash": "303b6a5c710f3d31a7ebd51ed74054fc63d5de38b23c97e0924c9e1927f74378",
+          "side": "right"
+        },
+        {
+          "hash": "5b58bcd46e8e62c2637c7109e98ab398758a82d2e6c48ce9f12e4ac40a00d319",
+          "side": "right"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "original_library_sha256",
+      "secret": "b1d4ca596c2c3bae54bcaf10327ddb84b4d12408bfad97ff65b9da0d6cb7f7cb",
+      "nonce": "51fb7b73b7809930a13fe672b6e4667c",
+      "leaf_hash": "b3e820755f02c4909f87d49eecf4a0d9fbb416945597101620e322f979d31ef1",
+      "merkle_proof": [
+        {
+          "hash": "5764c61e07bf02f02fd4602474f36d15f06fce367026ac75e77562f7040bf605",
+          "side": "right"
+        },
+        {
+          "hash": "88735dd9e1b7a0dd7f6951c6de7f3f3c4226d71664fb1e42765bf95d2904c966",
+          "side": "left"
+        },
+        {
+          "hash": "cd348dfe1337175f40637ca8866abfbf2d359c17ec7438c5b59d2e1dafe65202",
+          "side": "right"
+        },
+        {
+          "hash": "303b6a5c710f3d31a7ebd51ed74054fc63d5de38b23c97e0924c9e1927f74378",
+          "side": "right"
+        },
+        {
+          "hash": "5b58bcd46e8e62c2637c7109e98ab398758a82d2e6c48ce9f12e4ac40a00d319",
+          "side": "right"
+        }
+      ]
+    }
+  ]
+}
