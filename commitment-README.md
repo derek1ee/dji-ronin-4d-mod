@@ -40,4 +40,10 @@ No dependencies beyond Python 3 stdlib.
 
 ## Later
 
-When the full procedure is published, `commitment-sealed.json` and `commitment_v2-sealed.json` will be released. Run the verifier against them to confirm all leaves — proving both methods existed at the time these commitments were posted.
+When the procedures are published, sealed files will be released. The methods can be revealed independently:
+
+- **v2 only** (`commitment_v2-only-sealed.json`) — reveals the 6 new v2 leaves while keeping v1 sealed
+- **v1 only** (`commitment-sealed.json`) — reveals the original 11 sealed v1 leaves
+- **Both** (`commitment_v1_v2-sealed.json`) — reveals all 20 leaves at once
+
+Run the verifier against any of these to confirm the leaves match the published roots.

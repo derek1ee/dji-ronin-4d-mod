@@ -20,7 +20,7 @@ def verify_proof(lh, proof, root):
 
 data = json.load(open(sys.argv[1] if len(sys.argv)>1 else "commitment.json"))
 root = data["merkle_root"]
-leaves = data.get("public_leaves",[])+data.get("sealed_leaves",[])+data.get("all_leaves",[])
+leaves = data.get("public_leaves",[])+data.get("sealed_leaves",[])+data.get("all_leaves",[])+data.get("revealed_leaves",[])
 seen, ok = set(), True
 for lf in sorted({l["index"]:l for l in leaves}.values(), key=lambda x:x["index"]):
     h = leaf_hash(lf["index"], lf["label"], lf["secret"], lf["nonce"])
